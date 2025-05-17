@@ -38,6 +38,7 @@ header{
             font-size: 45px;
             letter-spacing: 3px;
             font-weight: 200;
+            margin-top: 15px;
         }
 
     }
@@ -50,4 +51,53 @@ ul, li{
     font-family: "Darker Grotesque", sans-serif;
     font-size: 25px;
     font-weight: 500;
+}
+
+.box{
+    background-color: #CDB4DB;
+    width: 650px;
+    height: auto;
+    margin: 15px;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    margin: auto;
+
+    td{
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+
+
+tr > th{
+    margin: auto;
+    color: #FFffff;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#roda_pe{
+    background-color: #A2D2FF;
+    width: auto;
+    height: 50px;
+}
+
+#roda_pe p{
+    text-align: center;
+    color: #000000;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 5px;
 }
