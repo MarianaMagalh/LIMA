@@ -7,7 +7,14 @@
 
 
 body{
-    background: #38040E;
+    height: 100vh;
+    margin: 0;
+}
+
+/* começo css login user */
+
+.botao_logar{
+  background: #38040E;
     background: linear-gradient(180deg,rgba(56, 4, 14, 1) 18%, rgba(128, 14, 19, 1) 62%, rgba(173, 40, 49, 1) 78%, rgba(250, 249, 249, 1) 100%);    display: flex;
     justify-content: space-around;
     height: 100vh;
@@ -60,6 +67,10 @@ body{
   }
 }
 
+.login{
+  width: 90em;
+  padding: 10px 100px 10px 100px;
+}
 
 h1{
     color: white;
@@ -132,3 +143,136 @@ a{
     font-family: "Inter", sans-serif;
     cursor: pointer;
 }
+
+/* fim css login*/
+
+/*############################################################################################*/
+
+/* começo css Home user sem acesso */
+
+.body_paginas{
+  background-color: #FAF9F9;
+}
+
+/* ******** MENU ********* */
+
+.menu_sem_acesso{
+  background-color: #640D14;
+  height: 100px;
+  width: 99%;
+  border-radius: 50px;
+  display: flex;
+  margin: 10px auto;
+  box-shadow: 0 0 10px #640d14;
+
+  nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+    ul{
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+    
+      li{
+        margin: 10px;
+        list-style: none;
+        font-family: "Inter", sans-serif;
+        color: #fff;
+        font-weight: 500;
+      }
+    }
+  }
+}
+/* ************* FIM MENU **************** */
+
+.botao_audio{
+  background-color: #AD2831;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 95%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+/* começo css USER sem acesso*/
+
+.conteiner_aviso{
+  margin-top: 50%;
+  margin: auto;
+  width: 600px;
+  height: 200px;
+  text-align: center;
+  padding: auto;
+
+  .aviso{
+    background-color: #AD2831;
+    height: 140px;
+    text-align: center;
+    border-radius: 50px;
+    padding: auto;
+
+    h3{
+      font-family: "Inter", sans-serif;
+      color: #fff;
+      font-size: 30px;
+      font-weight: 500;
+      text-align: center;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 30px;
+    }
+  }
+
+  p{
+    color: #000;
+
+    a{
+      font-family: "Inter", sans-serif;
+      color: #640D14;
+      text-decoration: none;
+      font-style: italic;
+      font-weight: 100;
+    }
+  }
+}
+
+/* ************* FOOTER ******************** */
+
+footer{
+  width: 100%;
+  height: 200px;
+  background-color: #640D14;
+
+  h4{
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  hr{
+    width: 98.8%;
+    background-color: #ffffffbb;
+    height: 2px;
+  }
+
+  table{
+    margin: auto;
+
+    tr{
+      
+      td{
+        text-align: center;
+      }
+    }
+  }
+}
+
+/* fim css USER sem acesso */
