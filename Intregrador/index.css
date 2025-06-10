@@ -188,6 +188,52 @@ a{
 }
 /* ************* FIM MENU **************** */
 
+.anuncios{
+  background-color: #d9d9d9;
+  width: 80%;
+  height: 75%;
+  border-radius: 20px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.carrossel{
+  margin: 0 auto;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 100px;
+
+  &:hover .conjunto{
+    animation-play-state: paused;
+  }
+
+  .conjunto{
+    display: flex;
+    will-change: transform;
+    animation: scrolling 20s linear infinite;
+
+  }
+
+    .produtos{
+      background-color: #d9d9d9;
+      width: 250px;
+      height: 350px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+}
+
+@keyframes scrolling {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+
+
 .botao_audio{
   background-color: #AD2831;
   width: 50px;
@@ -199,62 +245,128 @@ a{
   margin-bottom: 15px;
 }
 
-
-/* começo css USER sem acesso*/
-
-.conteiner_aviso{
-  margin-top: 50%;
-  margin: auto;
-  width: 600px;
-  height: 200px;
-  text-align: center;
-  padding: auto;
-
-  .aviso{
-    background-color: #AD2831;
-    height: 140px;
-    text-align: center;
-    border-radius: 50px;
-    padding: auto;
-
-    h3{
-      font-family: "Inter", sans-serif;
-      color: #fff;
-      font-size: 30px;
-      font-weight: 500;
-      text-align: center;
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-top: 30px;
-    }
+.infos{
+  margin-top: 160px;
+  hr{
+    height: 2px;
+    width: 95%;
+    background-color: #640D14;
   }
 
-  p{
-    color: #000;
+  table{
+    margin: auto;
+    padding: auto;
 
-    a{
-      font-family: "Inter", sans-serif;
-      color: #640D14;
-      text-decoration: none;
-      font-style: italic;
-      font-weight: 100;
+    .infos_importantes{
+      p{
+        margin: 40px;
+        color: #000;
+        text-align: justify;
+      }
     }
   }
 }
 
+.colecoes{
+  margin: 20px;
+  margin-top: 170px;
+
+  .titulo_colecoes{
+    color: #000;
+    text-align: center;
+    margin-bottom: 90px;
+  }
+
+  .as_colecoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    figure{
+      background-color: #d9d9d9;
+      margin-bottom: 60px;
+      width: 300px;
+      height: 450px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.361);
+    }
+  }
+}
+
+
+/* começo css USER sem acesso*/
+
+.alinhamento{
+  display: flex;
+  height: 40vh;
+  
+  .conteiner_aviso{
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 50%;
+    margin: auto;
+    width: 600px;
+    height: 200px;
+    text-align: center;
+    padding: auto;
+
+    .aviso{
+      background-color: #AD2831;
+      height: 140px;
+      text-align: center;
+      border-radius: 50px;
+      padding: auto;
+
+      h3{
+        font-family: "Inter", sans-serif;
+        color: #fff;
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 30px;
+      }
+    }
+
+    p{
+      color: #000;
+
+      a{
+        font-family: "Inter", sans-serif;
+        color: #640D14;
+        text-decoration: none;
+        font-style: italic;
+        font-weight: 100;
+      }
+    }
+  }
+}
+
+
+
 /* ************* FOOTER ******************** */
 
 footer{
+  margin-top: 100px;
   width: 100%;
-  height: 200px;
+  height: auto;
   background-color: #640D14;
 
   h4{
     font-family: "Inter", sans-serif;
     color: #fff;
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  .titulo_footer{
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    color: #fff;
     font-size: 25px;
-    padding-top: 10px;
-    padding-left: 10px;
+    text-align: center;
   }
 
   hr{
@@ -269,8 +381,19 @@ footer{
     tr{
       
       td{
+        display: flex;
         text-align: center;
       }
+    }
+  }
+
+  .info_criador{
+    background-color: #38040E;
+    height: 40px;
+    text-align: center;
+
+    p{
+      padding-top: 9px;
     }
   }
 }
