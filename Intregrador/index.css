@@ -1,4 +1,11 @@
-.inter{
+@Victora_Gaerioa{
+  font-family: 'Victora_Gaerioa';
+  src: url('fontes/victorah_gaerioa/Victorah-Gaerioa.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+.inter {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -24,13 +31,14 @@
   font-style: italic;
 }
 
-body{
-    height: 100vh;
-    margin: 0;
+body {
+  height: 100vh;
+  margin: 0;
 }
 
 /* começo css PRODUTOS user sem acesso */
-#busca{
+
+#busca {
   margin: 100px auto;
   display: flex;
   background-color: #FAF9F9;
@@ -41,17 +49,17 @@ body{
   justify-content: space-between;
   align-items: center;
 
-  #campo_busca{
+  #campo_busca {
     padding-left: 10px;
-    float:left;
-    font-size:18px;
-    border:none;
+    float: left;
+    font-size: 18px;
+    border: none;
     border-radius: 50px;
-    height:40px;
+    height: 40px;
     width: 100%;
   }
 
-  #btn_pesquisar{
+  #btn_pesquisar {
     background-color: #FAF9F9;
     border-radius: 50px;
     height: 40px;
@@ -60,53 +68,153 @@ body{
   }
 }
 
-hr{
-    height: 2px;
-    width: 95%;
-    background-color: #640D14;
+hr {
+  height: 2px;
+  width: 95%;
+  background-color: #640D14;
 }
 
-.alinhamento_titulo_sub{
+.alinhamento_titulo_sub {
   display: inline;
   align-items: center;
   justify-content: center;
 
-    h1{
-      margin-top: 100px;
-      text-align: center;
-      i{
-        font-family: "Kapakana", cursive;
-        color: #000;
-        font-weight: 400;
-        font-size: 120px;
-      }
+  h1 {
+    margin-top: 100px;
+    text-align: center;
+
+    i {
+      font-family: "Kapakana", cursive;
+      color: #000;
+      font-weight: 400;
+      font-size: 120px;
+    }
   }
 
-  .sub_titulo{
+  .sub_titulo {
     margin-bottom: 50px;
     margin: 0px;
     text-align: center;
     font-family: "Instrument Serif", serif;
     color: #000;
-    font-size: 40px;
+    font-size: 30px;
     letter-spacing: 20px;
   }
 
 }
 
+.ali_ancora_locali {
+  margin-top: 100px;
+  margin-bottom: 60px;
 
+  p {
+    margin-left: 50px;
+  }
 
+  .ancora_local {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: #640D14;
+    font-size: 20px;
+    cursor: pointer;
+    font-style: normal;
+  }
+}
+
+.ali_menu_categorias {
+  background-color: #640D14;
+  width: 100%;
+  height: auto;
+  margin-bottom: 90px;
+
+  nav {
+    margin: auto;
+    width: 70%;
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+
+      li {
+        color: #fff;
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.exibir_produtos {
+  width: 80%;
+  margin: auto;
+
+  #box_produtos {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+
+    a {
+      cursor: pointer;
+    }
+
+    h5 {
+      font-family: "Inter", sans-serif;
+      font-size: 25px;
+      font-weight: 500;
+      color: #000;
+      font-style: normal;
+    }
+
+    .preco {
+      font-family: "Inter", sans-serif;
+      font-size: 26px;
+      font-weight: 600;
+      color: #7A7A7A;
+      font-style: normal;
+    }
+
+    .produto {
+      width: 100%;
+      height: 100%;
+      font-style: normal;
+    }
+  }
+}
+
+#box_produtos:hover {
+  background-color: #640D14;
+
+  h5 {
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+
+  .preco {
+    font-family: "Inter", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #d8d8d8;
+    font-style: normal;
+  }
+}
 
 
 
 /* começo css LOGIN user */
 
-.botao_logar{
+.botao_logar {
   background: #38040E;
-    background: linear-gradient(180deg,rgba(56, 4, 14, 1) 18%, rgba(128, 14, 19, 1) 62%, rgba(173, 40, 49, 1) 78%, rgba(250, 249, 249, 1) 100%);    display: flex;
-    justify-content: space-around;
-    height: 100vh;
-    margin: 0;
+  background: linear-gradient(180deg, rgba(56, 4, 14, 1) 18%, rgba(128, 14, 19, 1) 62%, rgba(173, 40, 49, 1) 78%, rgba(250, 249, 249, 1) 100%);
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  margin: 0;
 }
 
 .carousel {
@@ -114,8 +222,9 @@ hr{
   height: 100vh;
   overflow: hidden;
   position: relative;
-  
+
 }
+
 .carousel-content {
   display: flex;
   flex-direction: column;
@@ -136,100 +245,103 @@ hr{
   color: #fff;
   margin-bottom: 30px;
 
-  img{
+  img {
     height: 500px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   }
 }
+
 /* Duplicando os itens para efeito de loop */
-.carousel-content > *:nth-child(5) ~ * {
+.carousel-content>*:nth-child(5)~* {
   border-bottom: none;
 }
+
 @keyframes scroll {
   0% {
     transform: translateY(0);
   }
+
   100% {
     transform: translateY(-100%);
   }
 }
 
-.login{
+.login {
   width: 90em;
   padding: 10px 100px 10px 100px;
 }
 
-h1{
-    color: white;
-    font-size: 100px;
-    margin: 30px 0 0 0;
+h1 {
+  color: white;
+  font-size: 100px;
+  margin: 30px 0 0 0;
 }
 
-h2{
-    color: white;
-    font-size: 100px;
-    margin: 0 0 0 50px ;
+h2 {
+  color: white;
+  font-size: 100px;
+  margin: 0 0 0 50px;
 }
 
-h3{
-    color: white;
-    font-size: 50px;
-    margin: 50px 0 0 0;
+h3 {
+  color: white;
+  font-size: 50px;
+  margin: 50px 0 0 0;
 }
 
-h4{
-    margin: 30px 0 10px 0;
-    color: white;
-    font-weight: 400;
-    font-size: 20px;
-    font-family: "Inter", sans-serif;
+h4 {
+  margin: 30px 0 10px 0;
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
 }
 
-.input_login{
-    width: 500px;
-    height: 30px;
+.input_login {
+  width: 500px;
+  height: 30px;
 }
 
-.link_cadastro{
-    margin: 150px 0 0 0;
-    text-align: center;
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-size: 20px;
-    font-weight: 200;
+.link_cadastro {
+  margin: 150px 0 0 0;
+  text-align: center;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
 
-    a{
-        text-decoration: none;
-        font-style: italic;
-        color: #640D14;
-}
-}
-
-p{
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-size: 20px;
-    font-weight: 200;
-}
-
-a{
+  a {
     text-decoration: none;
     font-style: italic;
-    color: white;
+    color: #640D14;
+  }
 }
 
-.botao_logar{
-    margin-top: 30px;
-    width: 100px;
-    height: 44px;
-    background-color: #AD2831;
-    border-radius: 10px;
-    color: white;
-    font-size: 30px;
-    border: none;
-    font-family: "Inter", sans-serif;
-    cursor: pointer;
+p {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+a {
+  text-decoration: none;
+  font-style: italic;
+  color: white;
+}
+
+.botao_logar {
+  margin-top: 30px;
+  width: 100px;
+  height: 44px;
+  background-color: #AD2831;
+  border-radius: 10px;
+  color: white;
+  font-size: 30px;
+  border: none;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
 }
 
 /* fim css login*/
@@ -238,13 +350,13 @@ a{
 
 /* começo css Home user sem acesso */
 
-.body_paginas{
+.body_paginas {
   background-color: #FAF9F9;
 }
 
 /* ******** MENU ********* */
 
-.menu_sem_acesso{
+.menu_sem_acesso {
   background-color: #640D14;
   height: 100px;
   width: 99%;
@@ -253,30 +365,59 @@ a{
   margin: 10px auto;
   box-shadow: 0 0 10px #640d14;
 
-  nav{
+  nav {
     width: 90%;
     margin: auto;
     display: flex;
     align-items: center;
 
-    ul{
+    .nome_loja{
+      font-family: 'Victora_Gaerioa', Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      font-weight: 400;
+      font-style: normal;
+
+    }
+
+    ul {
       display: flex;
       align-items: center;
       margin-left: auto;
-    
-      li{
-        margin: 10px;
-        list-style: none;
-        font-family: "Inter", sans-serif;
-        color: #fff;
-        font-weight: 500;
-      }
+      list-style: none;
+
     }
   }
 }
+
+.menu_lista, a {
+  margin: 10px;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.bi-person-circle{
+  width: 50px;
+  height: 50px;
+  background-color: #FAF9F9;
+  color: #38040E;
+  border-radius: 80%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.bi-cart3{
+  width: 50px;
+  height: 50px;
+  color: #FAF9F9;
+  margin-left: 10px;
+}
+
 /* ************* FIM MENU **************** */
 
-.anuncios{
+.anuncios {
   background-color: #d9d9d9;
   width: 80%;
   height: 75%;
@@ -285,44 +426,45 @@ a{
   margin-bottom: 100px;
 }
 
-.carrossel{
+.carrossel {
   margin: 0 auto;
   display: flex;
   overflow: hidden;
   position: relative;
   margin-bottom: 100px;
 
-  &:hover .conjunto{
+  &:hover .conjunto {
     animation-play-state: paused;
   }
 
-  .conjunto{
+  .conjunto {
     display: flex;
     will-change: transform;
     animation: scrolling 20s linear infinite;
 
   }
 
-    .produtos{
-      background-color: #d9d9d9;
-      width: 250px;
-      height: 350px;
-      margin-left: 20px;
-      margin-right: 20px;
-    }
+  .produtos {
+    background-color: #d9d9d9;
+    width: 250px;
+    height: 350px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 @keyframes scrolling {
-  0%{
+  0% {
     transform: translateX(0);
   }
-  100%{
+
+  100% {
     transform: translateX(-100%);
   }
 }
 
 
-.botao_audio{
+.botao_audio {
   background-color: #AD2831;
   width: 50px;
   height: 50px;
@@ -333,20 +475,21 @@ a{
   margin-bottom: 15px;
 }
 
-.infos{
+.infos {
   margin-top: 160px;
-  hr{
+
+  hr {
     height: 2px;
     width: 95%;
     background-color: #640D14;
   }
 
-  table{
+  table {
     margin: auto;
     padding: auto;
 
-    .infos_importantes{
-      p{
+    .infos_importantes {
+      p {
         margin: 40px;
         color: #000;
         text-align: justify;
@@ -355,22 +498,22 @@ a{
   }
 }
 
-.colecoes{
+.colecoes {
   margin: 20px;
   margin-top: 170px;
 
-  .titulo_colecoes{
+  .titulo_colecoes {
     color: #000;
     text-align: center;
     margin-bottom: 90px;
   }
 
-  .as_colecoes{
+  .as_colecoes {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    figure{
+    figure {
       background-color: #d9d9d9;
       margin-bottom: 60px;
       width: 300px;
@@ -384,11 +527,11 @@ a{
 
 /* começo css USER sem acesso*/
 
-.alinhamento{
+.alinhamento {
   display: flex;
   height: 40vh;
-  
-  .conteiner_aviso{
+
+  .conteiner_aviso {
     justify-content: center;
     align-items: center;
 
@@ -399,14 +542,14 @@ a{
     text-align: center;
     padding: auto;
 
-    .aviso{
+    .aviso {
       background-color: #AD2831;
       height: 140px;
       text-align: center;
       border-radius: 50px;
       padding: auto;
 
-      h3{
+      h3 {
         font-family: "Inter", sans-serif;
         color: #fff;
         font-size: 30px;
@@ -418,10 +561,10 @@ a{
       }
     }
 
-    p{
+    p {
       color: #000;
 
-      a{
+      a {
         font-family: "Inter", sans-serif;
         color: #640D14;
         text-decoration: none;
@@ -436,20 +579,20 @@ a{
 
 /* ************* FOOTER ******************** */
 
-footer{
+footer {
   margin-top: 100px;
   width: 100%;
   height: auto;
   background-color: #640D14;
 
-  h4{
+  h4 {
     font-family: "Inter", sans-serif;
     color: #fff;
     font-size: 30px;
     padding: 10px;
   }
 
-  .titulo_footer{
+  .titulo_footer {
     font-family: "Inter", sans-serif;
     font-weight: 300;
     color: #fff;
@@ -457,30 +600,30 @@ footer{
     text-align: center;
   }
 
-  hr{
+  hr {
     width: 98.8%;
     background-color: #ffffffbb;
     height: 2px;
   }
 
-  table{
+  table {
     margin: auto;
 
-    tr{
-      
-      td{
+    tr {
+
+      td {
         display: flex;
         text-align: center;
       }
     }
   }
 
-  .info_criador{
+  .info_criador {
     background-color: #38040E;
     height: 40px;
     text-align: center;
 
-    p{
+    p {
       padding-top: 9px;
     }
   }
