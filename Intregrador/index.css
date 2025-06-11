@@ -5,13 +5,101 @@
   font-style: normal;
 }
 
+.kapakana {
+  font-family: "Kapakana", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.instrument-serif-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.instrument-serif-regular-italic {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
 
 body{
     height: 100vh;
     margin: 0;
 }
 
-/* começo css login user */
+/* começo css PRODUTOS user sem acesso */
+#busca{
+  margin: 100px auto;
+  display: flex;
+  background-color: #FAF9F9;
+  border: #800E13 solid 5px;
+  border-radius: 50px;
+  width: 750px;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+
+  #campo_busca{
+    padding-left: 10px;
+    float:left;
+    font-size:18px;
+    border:none;
+    border-radius: 50px;
+    height:40px;
+    width: 100%;
+  }
+
+  #btn_pesquisar{
+    background-color: #FAF9F9;
+    border-radius: 50px;
+    height: 40px;
+    width: 50px;
+    border: none;
+  }
+}
+
+hr{
+    height: 2px;
+    width: 95%;
+    background-color: #640D14;
+}
+
+.alinhamento_titulo_sub{
+  display: inline;
+  align-items: center;
+  justify-content: center;
+
+    h1{
+      margin-top: 100px;
+      text-align: center;
+      i{
+        font-family: "Kapakana", cursive;
+        color: #000;
+        font-weight: 400;
+        font-size: 120px;
+      }
+  }
+
+  .sub_titulo{
+    margin-bottom: 50px;
+    margin: 0px;
+    text-align: center;
+    font-family: "Instrument Serif", serif;
+    color: #000;
+    font-size: 40px;
+    letter-spacing: 20px;
+  }
+
+}
+
+
+
+
+
+
+/* começo css LOGIN user */
 
 .botao_logar{
   background: #38040E;
