@@ -1,8 +1,6 @@
-@Victora_Gaerioa{
+@font-face {
   font-family: 'Victora_Gaerioa';
-  src: url('fontes/victorah_gaerioa/Victorah-Gaerioa.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
+  src: url(./fontes/victorah_gaerioa/Victorah-Gaerioa.ttf.ttf) format('truetype');
 }
 
 .inter {
@@ -19,7 +17,7 @@
   font-style: normal;
 }
 
-.''''''instrument-serif-regular {
+.instrument-serif-regular {
   font-family: "Instrument Serif", serif;
   font-weight: 400;
   font-style: normal;
@@ -575,6 +573,93 @@ a {
   }
 }
 
+/**********************************************************************************************/
+
+/* css PRODUTO ESPECIFICO */
+
+.vender_produto{
+  margin-top: 80px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  .amostra_produto{
+    width: 550px;
+    height: 750px;
+  }
+
+  .vender_info{
+    width: 750px;
+    height: 750px;
+    display: inline-block;
+    justify-content: space-between;
+    
+    h4{
+      font-family: 'Victora_Gaerioa';
+      color: #000;
+      font-size: 50px;
+      margin: 0px;
+    }
+
+    .vender_preco{
+      font-family: 'Inter', sans-serif;
+      color: #000;
+      font-weight: bold;
+      font-size: 30px;
+      margin: 0px;
+      margin-bottom: 50px;
+    }
+
+    hr{
+      width: auto;
+    }
+
+    .vender_descricao{
+      font-family: 'Inter', sans-serif;
+      color: #000;
+      font-size: 28px;
+      margin-bottom: 150px;
+    }
+
+    .bnt_vender{
+      width: 90%;
+      height: 85px;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-size: 50px;
+      background-color: #AD2831;
+      border: #AD2831 solid 1px;
+      border-radius: 10px;
+    }
+
+    .add_infos{
+      hr{
+        width: 97%;
+      }
+      .espeficicacoes{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-top: 40px;
+
+        .bi-caret-down-fill{
+          color: #AD2831;
+          width: 50px;
+          height: 23px
+        }
+
+        h6{
+          font-family: 'Inter', sans-serif;
+          font-size: 25px;
+          font-weight: 500;
+          margin: 0px;
+          
+        }
+      }
+    }
+  }
+}
 
 
 /* ************* FOOTER ******************** */
